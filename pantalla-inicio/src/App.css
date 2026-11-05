@@ -1,0 +1,60 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.app {
+  min-height: 100vh;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.encabezado {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+.encabezado .mini { font-size: 13px; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.05em; }
+.encabezado h1 { font-size: 28px; margin: 4px 0; }
+.encabezado .sub { font-size: 14px; opacity: 0.9; }
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.boton {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px 12px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  font: inherit;
+  color: inherit;
+}
+.boton:hover { border-color: #2563eb; box-shadow: 0 6px 14px rgba(37, 99, 235, 0.15); }
+.boton:active { transform: scale(0.97); }
+
+.icono { font-size: 40px; }
+.titulo { font-size: 16px; font-weight: 700; }
+.detalle { font-size: 12px; color: #64748b; }
+
+.pie { text-align: center; font-size: 12px; color: #94a3b8; margin-top: auto; }
