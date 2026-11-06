@@ -1,0 +1,5 @@
+.inventario{margin:24px auto;padding:24px;max-width:1000px;background:#fff;border:1px solid #dce3e9;border-radius:12px;color:#263238}
+.inventario h2,.inventario h3{margin:0 0 14px}.inventario h3{margin-top:22px}.inventario__nota{font-size:14px;color:#536471;line-height:1.5}
+.inventario__tabla{overflow-x:auto}.inventario table{width:100%;border-collapse:collapse;text-align:left}.inventario th,.inventario td{padding:12px;border-bottom:1px solid #e8edf0}
+.inventario__bajo,.inventario__bien{display:inline-block;padding:5px 9px;border-radius:7px;font-weight:600}.inventario__bajo{background:#ffecdf;color:#9e3618}.inventario__bien{background:#e2f5e7;color:#21633a}
+.inventario__form{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;align-items:end}.inventario__form label{display:grid;gap:5px;font-size:14px}.inventario__form input,.inventario__form select{padding:9px;border:1px solid #a7b4c1;border-radius:6px;width:100%}.inventario__form button{border:0;border-radius:7px;padding:12px;background:#2563eb;color:white;cursor:pointer}

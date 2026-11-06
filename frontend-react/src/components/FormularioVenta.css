@@ -1,0 +1,250 @@
+.ventas {
+  width: min(960px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.ventas__cabecera {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #f8fafc;
+  padding: 2rem 2.25rem;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px -24px rgba(30, 58, 138, 0.8);
+}
+
+.ventas__etiqueta {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #bfdbfe;
+  margin-bottom: 0.5rem;
+}
+
+.ventas__titulo {
+  margin: 0;
+  font-size: clamp(1.6rem, 4vw, 2.15rem);
+  line-height: 1.2;
+}
+
+.ventas__descripcion {
+  margin: 0.65rem 0 0;
+  max-width: 60ch;
+  color: #dbeafe;
+  font-size: 0.95rem;
+}
+
+.ventas__formulario {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 1.75rem 2rem 2rem;
+  box-shadow: 0 12px 30px -22px rgba(15, 23, 42, 0.45);
+}
+
+.ventas__campos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.campo label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.campo input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  font-size: 0.95rem;
+  color: #0f172a;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.campo input:hover {
+  border-color: #94a3b8;
+}
+
+.campo input:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+}
+
+.campo input[aria-invalid='true'] {
+  border-color: #dc2626;
+  background: #fef2f2;
+}
+
+.campo__error {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #dc2626;
+}
+
+.ventas__mensaje {
+  margin: 1.25rem 0 0;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.ventas__mensaje--exito {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.ventas__mensaje--error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.ventas__acciones {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.boton {
+  font: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.6rem;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.boton--primario {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 10px 20px -12px rgba(37, 99, 235, 0.9);
+}
+
+.boton--primario:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.boton--primario:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.boton:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.historial {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 1.5rem 2rem 1.75rem;
+  box-shadow: 0 12px 30px -24px rgba(15, 23, 42, 0.4);
+}
+
+.historial__cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.historial__cabecera h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.historial__total {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.historial__total strong {
+  color: #1e3a8a;
+  font-size: 1rem;
+}
+
+.historial__vacio {
+  margin: 0;
+  padding: 1.25rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+}
+
+.historial__tabla-contenedor {
+  overflow-x: auto;
+}
+
+.historial__tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.historial__tabla th,
+.historial__tabla td {
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.historial__tabla th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+}
+
+.historial__tabla tbody tr:hover {
+  background: #f8fafc;
+}
+
+.historial__tabla td:last-child,
+.historial__tabla th:last-child {
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .ventas__cabecera,
+  .ventas__formulario,
+  .historial {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .ventas__campos {
+    grid-template-columns: 1fr;
+  }
+
+  .ventas__acciones {
+    justify-content: stretch;
+  }
+
+  .boton {
+    width: 100%;
+  }
+}
